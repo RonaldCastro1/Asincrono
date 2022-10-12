@@ -6,7 +6,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "nodemon callback/3_request.js",
-    "start": "nodemon callback/2_simple_arrow.js"
+    "start": "nodemon promesas/2_simple_arrow.js"
   },
   "keywords": [],
   "author": "",

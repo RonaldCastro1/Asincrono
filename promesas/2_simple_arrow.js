@@ -2,7 +2,7 @@ const xmlHttpRequest = require('xmlhttprequest').XMLHttpRequest
 
 const url = "https://pokeapi.co/api/v2/type"
 //funcion para conectar a una api en modo asincrono
-const get_data = (endpoint, exito, fallo)=>{
+const get_data = (endpoint)=>{
         //Definir la promesa
         let promise = new Promise((resolve, rejected)=>{
         //1. Crear objeto xmlhttp
@@ -14,13 +14,13 @@ const get_data = (endpoint, exito, fallo)=>{
         //4. Tratamiento de datos de la response
         h.onload = ()=>{
         if(h.status === 200){
-            exito(h.responseText)
+            resolve(h.responseText)
         }else{
-            fallo(h.status)
+            rejected(h.status)
         }
     }
     })
-    
+    return promise
 }
 //funcion callback: exito
 const exito = (response)=>{
@@ -36,4 +36,6 @@ const fallo = (status)=>{
     console.log(status)
 }
 //invocar la funcion
-get_data(url, exito, fallo)
+get_data(url).then((data)=>{
+    exito(data)
+})

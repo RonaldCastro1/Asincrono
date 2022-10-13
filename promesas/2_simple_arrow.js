@@ -38,4 +38,6 @@ const fallo = (status)=>{
 //invocar la funcion
 get_data(url).then((data)=>{
     exito(data)
+}).catch((status)=>{
+    fallo(status)
 })

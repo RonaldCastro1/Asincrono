@@ -1,5 +1,5 @@
 const xmlHttpRequest = require('xmlhttprequest').XMLHttpRequest
-
+//node NOMBRE
 const url = "https://pokeapi.co/api/v2/type"
 //funcion para conectar a una api en modo asincrono
 function get_data(endpoint, exito, fallo){

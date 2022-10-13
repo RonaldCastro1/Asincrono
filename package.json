@@ -5,8 +5,8 @@
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon callback/3_request.js",
-    "start": "nodemon promesas/2_simple_arrow.js"
+    "dev": "nodemon evidencias/universidades.js",
+    "start": "nodemon evidencias/animechan.js"
   },
   "keywords": [],
   "author": "",
@@ -15,6 +15,8 @@
     "nodemon": "^2.0.20"
   },
   "dependencies": {
+    "axios": "^1.1.2",
+    "needle": "^3.1.0",
     "request": "^2.88.2",
     "xmlhttprequest": "^1.8.0"
   }

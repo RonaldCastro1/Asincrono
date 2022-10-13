@@ -7,7 +7,7 @@ let config = {
 
 axios (config)
 .then((data)=>{
-    console.log(data)
+    console.log(response)
 }).catch((error)=>{
-    console.log(Error(error))
+    console.log(Error(`error: ${error`))
 })

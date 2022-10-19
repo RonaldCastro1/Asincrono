@@ -6,7 +6,9 @@
   "main": "index.js",
   "scripts": {
     "dev": "nodemon evidencias/universidades.js",
-    "start": "nodemon evidencias/animechan.js"
+    "gatito": "nodemon evidencias/gatito.js",
+    "riky": "nodemon evidencias/rikymorty.js",
+    "paises": "nodemon evidencias/paises.js"
   },
   "keywords": [],
   "author": "",
